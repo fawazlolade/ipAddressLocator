@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindMe</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/img/logo.svg" type="image/x-icon">
+</head>
+<body>
+    <header class="site-header" id="site_header">
+        <nav class="site-nav" id="site_nav">
+            <a href="/" class="logo"><img src="/img/logo.png" alt="logo" ></a>
+            <div class="nav-links" id="navlinks">
+                <ul>
+
+                    <li><a href="javascript:void(0)"><i class="fa fa-times" id="cancel" aria-hidden="true"></i></a></li>
+                    <hr style="border-color: ghostwhite;">
+                    <li><a href="https://github.com/fawazlolade/ipAddressLocator#readme" class="other-links navlink">Overview</a></li>
+                    <li><a href="javascript:void(0)" class="locate-btn navlink" id="locateBtn">Locate now</a></li>
+                  
+                </ul>
+            </div>
+            <button class="menu-btn" id="menubtn"><img src="/img/menu.svg" alt="menu.svg"></button>
+        </nav>
+        <section class="locate-section" id="locateSection">
+            <h1>Instant IP address locator </h1>
+            <p>Search for any IP address in any location of the world in just few clicks.</p>
+            <form action="/result" method="post" class="ip-form">
+                <label for="ip">Enter IP Address</label><br/>
+                <input type="text" name="ipAddress" id="ipAddress" placeholder="Enter IP Address you want to locate" required>
+                <button type="submit" class="submit-btn">Locate <span class="locate-icon"><i class="fa fa-location-arrow" aria-hidden="true"></i></span></button>
+            </form>
+            
+        </section>
+    </header>    
+</body>
+<script src="/js/index.js"></script>
+</html>

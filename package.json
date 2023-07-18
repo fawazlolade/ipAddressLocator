@@ -1,0 +1,25 @@
+{
+  "name": "ipaddresslocator",
+  "version": "1.0.0",
+  "description": "ip address locator",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/FawazdeenAbimbola/ipAddressLocator.git"
+  },
+  "author": "Fawaz Ogunleye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FawazdeenAbimbola/ipAddressLocator/issues"
+  },
+  "homepage": "https://github.com/FawazdeenAbimbola/ipAddressLocator#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "request": "^2.88.2"
+  }
+}

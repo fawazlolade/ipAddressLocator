@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Locator Report</title>
+    <link rel="stylesheet" href="/css/ejs.css">
+</head>
+<body>
+  
+    <main>
+        <h1>IP Location Result</h1>
+        <figure class="wrapper">
+          <table>
+            <caption class="visually-hidden">IP Address Location Report</caption>
+            <thead>
+              <tr>
+                <th scope="col">IP Info</th>
+                <th scope="col">Details</th>   
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <th scope="row">Address</th>
+                <td><%= ipAddress %></td>    
+              </tr>
+
+              <tr>
+                <th scope="row">Version</th>
+                <td><%= version %></td>
+              </tr>
+              
+              <tr>
+                <th scope="row">City</th>
+                <td><%= city %></td>
+              </tr>
+  
+              <tr>
+                 <th scope="row">Region</th>
+                 <td><%= region %></td>
+              </tr>
+  
+              <tr>
+                <th scope="row">Region code</th>
+                <td><%= regionCode %></td>
+              </tr>
+  
+              <tr>
+                <th scope="row">Country code</th>       
+                <td><%= countryCode %></td>
+              </tr>
+
+              <tr>
+                <th scope="row">Country name</th>
+                <td><%= countryName %></td>
+              </tr>
+  
+              <tr>
+                <th scope="row">latitude</th>
+                <td><%= latitude %></td>
+              </tr>
+  
+              <tr>
+                <th scope="row">longitude</th>
+                <td><%= longitude %></td>
+              </tr>
+  
+              <tr>
+                <th scope="row">Country calling code</th>
+                <td><%= countryCallingCode %></td>
+              </tr>
+  
+              <tr>
+                <th scope="row">Country area</th>
+                <td><%= countryArea %></td>
+              </tr>
+  
+              <tr>
+                <th scope="row">asn</th>
+                <td><%= asn %></td>
+              </tr>
+
+              <tr>
+              <th scope="row">org</th>
+                <td><%= org %></td>      
+              </tr> 
+             
+            </tbody>
+  
+          </table>
+        </figure>
+        <div class="buttons">
+            <a href="/" class="home-btn">Return Home</a></button>
+            <button class="print-btn" onclick="window.print()">Print Info</button>
+        </div>
+      </main>
+</body>
+</html>
